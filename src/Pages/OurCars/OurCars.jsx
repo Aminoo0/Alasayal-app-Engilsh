@@ -7,7 +7,7 @@ import car1 from '../../assets/car-one.png'
 import car2 from '../../assets/car-two.png'
 import car3 from '../../assets/car-three.png'
 import car4 from '../../assets/car-four.png'
-import { category } from '../../Context/categoryContext'
+import { category } from '../../Context/CategoryContext'
 
 export default function OurCars() {
 
