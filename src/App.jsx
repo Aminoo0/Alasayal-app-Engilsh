@@ -5,9 +5,9 @@ import ContactUs from './Pages/ContactUs/ContactUs'
 import AboutUs from './Pages/AboutUs/AboutUs'
 import OurCars from './Pages/OurCars/OurCars'
 import CarDetails from './Pages/CarDetails/CarDetails'
-import CarDetails2 from './Pages/CarDetails/CarDetails2'
 import { dataCars } from './Components/OurCarsDetails/OurCarsDetails'
 import CategoryContextProvider from './Context/categoryContext'
+import HeaderCaregory from './Pages/HeaderCategorys/HeaderCategory'
 
 let App = () => {
 
@@ -19,7 +19,7 @@ let App = () => {
         { path: 'contactus', element: <ContactUs /> },
         { path: 'ourcars', element: <OurCars /> },
         { path: `ourcars/:${dataCars.id}/:content`, element: <CarDetails /> },
-        // { path: `ourcars/:${dataCars.id}/:content`, element: <CarDetails2 /> },
+        { path: `ourcars/:${dataCars.category}`, element: <HeaderCaregory /> },
       ]
     }
   ])

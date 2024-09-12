@@ -34,10 +34,10 @@ export default function Footer() {
           <ul className='flex flex-col gap-y-5'>
             <li className='text-[#e64a41]'>Fleets</li>
             <ul className='text-white mr-5 flex flex-col gap-y-3'>
-              <Link to={'/ourcars'}><li className='hover:text-[#e64a41] hover:ml-3 cursor-pointer duration-300'> <i className="fa-solid fa-caret-right mr-3 text-[#e64a41]"></i>Car</li></Link>
-              <Link to={'/ourcars'}><li className='hover:text-[#e64a41] hover:ml-3 cursor-pointer duration-300'> <i className="fa-solid fa-caret-right mr-3 text-[#e64a41]"></i>Van</li></Link>
-              <Link to={'/ourcars'}><li className='hover:text-[#e64a41] hover:ml-3 cursor-pointer duration-300'> <i className="fa-solid fa-caret-right mr-3 text-[#e64a41]"></i>Mini Bus</li></Link>
-              <Link to={'/ourcars'}><li className='hover:text-[#e64a41] hover:ml-3 cursor-pointer duration-300'> <i className="fa-solid fa-caret-right mr-3 text-[#e64a41]"></i>Bus</li></Link>
+              <Link to={'/ourcars/car'}><li className='hover:text-[#e64a41] hover:ml-3 cursor-pointer duration-300'> <i className="fa-solid fa-caret-right mr-3 text-[#e64a41]"></i>Car</li></Link>
+              <Link to={'/ourcars/van'}><li className='hover:text-[#e64a41] hover:ml-3 cursor-pointer duration-300'> <i className="fa-solid fa-caret-right mr-3 text-[#e64a41]"></i>Van</li></Link>
+              <Link to={'/ourcars/minibus'}><li className='hover:text-[#e64a41] hover:ml-3 cursor-pointer duration-300'> <i className="fa-solid fa-caret-right mr-3 text-[#e64a41]"></i>Mini Bus</li></Link>
+              <Link to={'/ourcars/bus'}><li className='hover:text-[#e64a41] hover:ml-3 cursor-pointer duration-300'> <i className="fa-solid fa-caret-right mr-3 text-[#e64a41]"></i>Bus</li></Link>
             </ul>
           </ul>
         </div>
