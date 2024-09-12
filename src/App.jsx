@@ -6,7 +6,7 @@ import AboutUs from './Pages/AboutUs/AboutUs'
 import OurCars from './Pages/OurCars/OurCars'
 import CarDetails from './Pages/CarDetails/CarDetails'
 import { dataCars } from './Components/OurCarsDetails/OurCarsDetails'
-import CategoryContextProvider from './Context/categoryContext'
+import CategoryContextProvider from './Context/CategoryContext'
 import HeaderCaregory from './Pages/HeaderCategorys/HeaderCategory'
 
 let App = () => {
