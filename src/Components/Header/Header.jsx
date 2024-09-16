@@ -38,9 +38,9 @@ export default function Header() {
                     </motion.div >
                 </div >
             </div >
-            <div className='w-full p-3 bg-[#e64c43] flex justify-center items-center gap-5 text-white'>
-                <h3 className='text-xl font-semibold text-nowrap'>Looking for a luxury fleet?</h3>
-                <Link to={'/contactus'}><motion.button initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='bg-white p-3 rounded-md text-[#e64c43] text-xl font-bold text-nowrap'>BOOK NOW</motion.button></Link>
+            <div className='w-full p-3 bg-[#e64c43] flex flex-wrap md:flex-nowrap justify-center items-center gap-5 text-white'>
+                <h3 className='text-xl font-semibold text-nowrap text-center'>Looking for a luxury fleet?</h3>
+                <Link to={'/contactus'}><motion.button initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className='w-full bg-white p-3 rounded-md text-[#e64c43] text-xl font-bold text-nowrap'>BOOK NOW</motion.button></Link>
             </div>
         </header >
     )
