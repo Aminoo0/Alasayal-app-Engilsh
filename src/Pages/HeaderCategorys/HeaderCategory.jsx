@@ -28,7 +28,7 @@ export default function HeaderCaregory() {
         <section className='py-1 pb-52 bg-[url(assets/main-bg.jpg)]'>
             <div className='w-full relative overflow-hidden'>
                 <div className='w-full bg-slate-700 bg-opacity-50 absolute top-0 left-0 right-0 bottom-0'>
-                    <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} className='text-white text-5xl font-bold absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2'>Our Fleets</motion.h2>
+                    <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }} className='text-white text-5xl font-bold absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-nowrap'>Our Fleets</motion.h2>
                 </div>
                 <img className='h-[400px] object-cover w-full' src={ourCarsHeader} alt="" />
             </div>
