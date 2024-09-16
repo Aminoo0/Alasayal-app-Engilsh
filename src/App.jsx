@@ -11,7 +11,7 @@ import HeaderCaregory from './Pages/HeaderCategorys/HeaderCategory'
 
 let App = () => {
 
-  let router = createHashRouter([
+  let router = createBrowserRouter([
     {
       path: '', element: <Layout />, children: [
         { index: true, element: <Home /> },
