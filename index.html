@@ -18,7 +18,7 @@
         <div itemscope itemtype="https://schema.org/WebSite">
           <link itemprop="url" href="https://alasayal-app-engilsh.vercel.app/" />
           <form itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
-            <meta itemprop="target" content="https://alasayal-app-engilsh.vercel.app/#/{search_term_string}" />
+            <meta itemprop="target" content="https://alasayal-app-engilsh.vercel.app/#/{query}" />
             <input itemprop="query-input" type="text" name="search_term_string" />
             <input type="submit" />
           </form>
@@ -30,6 +30,15 @@
 
 <body>
   <div id="root"></div>
+  <div itemscope itemtype="https://schema.org/WebSite"></div>
+  <link itemprop="url" href="https://alasayal-app-engilsh.vercel.app/" />
+  <form itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+    <meta itemprop="target" content="https://alasayal-app-engilsh.vercel.app/#/{query}" />
+    <input itemprop="query-input" type="text" name="search_term_string" />
+    <input type="submit" />
+  </form>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>
