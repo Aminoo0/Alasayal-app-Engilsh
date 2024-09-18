@@ -3,6 +3,7 @@ import ourCarsHeader from '../../assets/our-cars-header.jpg'
 import { useLocation, useParams } from 'react-router-dom'
 import { useForm, ValidationError } from '@formspree/react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 
 export default function ContactUs() {
@@ -16,7 +17,11 @@ export default function ContactUs() {
     window.scroll(0, 0)
   }, [pathname])
 
-  return (
+  return (<>
+    <Helmet>
+      <meta name="description" content="Al Asayel For Luxury Tourist Transport" />
+      <title>Contact Us</title>
+    </Helmet>
     <section className={`pb-32 bg-[url(assets/main-bg.jpg)]`}>
       <div className='w-full mb-10 relative'>
         <div className='w-full bg-slate-700 bg-opacity-50 absolute top-0 left-0 right-0 bottom-0'>
@@ -91,5 +96,5 @@ export default function ContactUs() {
         </div>
       </div>
     </section>
-  )
+  </>)
 }

@@ -8,6 +8,8 @@ import CarDetails from './Pages/CarDetails/CarDetails'
 import { dataCars } from './Components/OurCarsDetails/OurCarsDetails'
 import CategoryContextProvider from './Context/CategoryContext'
 import HeaderCaregory from './Pages/HeaderCategorys/HeaderCategory'
+import { HelmetProvider } from 'react-helmet-async';
+
 
 let App = () => {
 
@@ -26,10 +28,12 @@ let App = () => {
 
   return (
     <>
-      <CategoryContextProvider>
-        <RouterProvider router={router}>
-        </RouterProvider>
-      </CategoryContextProvider>
+      <HelmetProvider>
+        <CategoryContextProvider>
+          <RouterProvider router={router}>
+          </RouterProvider>
+        </CategoryContextProvider>
+      </HelmetProvider>
     </>
   )
 }

@@ -14,6 +14,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/zoom';
+import { Helmet } from 'react-helmet-async';
 
 
 export default function CarDetails() {
@@ -24,7 +25,11 @@ export default function CarDetails() {
     // console.log(dataCars);
     const [state, handleSubmit] = useForm("xnnarjoq");
 
-    return (
+    return (<>
+        <Helmet>
+            <meta name="description" content="Al Asayel For Luxury Tourist Transport" />
+            <title>{params.content}</title>
+        </Helmet>
         <section className={`py-1 pb-52 bg-[url(assets/main-bg.jpg)]`}>
             <div className='w-full mb-12 relative overflow-hidden'>
                 <div className='w-full bg-slate-700 bg-opacity-50 absolute top-0 left-0 right-0 bottom-0'>
@@ -199,6 +204,6 @@ export default function CarDetails() {
                 </div>
             </div>
         </section>
-    )
+    </>)
 }
 

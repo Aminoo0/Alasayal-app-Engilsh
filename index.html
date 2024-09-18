@@ -1,13 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href='src/assets/main-logo.png' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>الأصايل للنقل السياحي الفاخر</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href='src/assets/main-logo.png' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "alasayeltours",
+  "url": "https://en.alasayeltours.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://en.alasayeltours.com/#/{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

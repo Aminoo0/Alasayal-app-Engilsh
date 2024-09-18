@@ -7,6 +7,7 @@ import car1 from '../../assets/car-one.png'
 import car2 from '../../assets/car-two.png'
 import car3 from '../../assets/car-three.png'
 import car4 from '../../assets/car-four.png'
+import { Helmet } from 'react-helmet-async';
 
 
 export default function HeaderCaregory() {
@@ -24,7 +25,11 @@ export default function HeaderCaregory() {
         window.scroll(0, 0)
     }, [pathname])
 
-    return (
+    return (<>
+        <Helmet>
+            <meta name="description" content="Al Asayel For Luxury Tourist Transport" />
+            <title>Our Cars {params.undefined}</title>
+        </Helmet>
         <section className='py-1 pb-52 bg-[url(assets/main-bg.jpg)]'>
             <div className='w-full relative overflow-hidden'>
                 <div className='w-full bg-slate-700 bg-opacity-50 absolute top-0 left-0 right-0 bottom-0'>
@@ -90,6 +95,6 @@ export default function HeaderCaregory() {
                 )}
             </div>
         </section>
-    )
+    </>)
 }
 

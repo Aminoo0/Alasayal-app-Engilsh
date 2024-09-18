@@ -5,6 +5,7 @@ import aboutUs1 from '../../assets/about-us-1.jpg'
 import aboutUs2 from '../../assets/about-us-2.jpg'
 import aboutUsPerson from '../../assets/about-us-person.jpg'
 import { useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 export default function AboutUs() {
 
@@ -14,7 +15,11 @@ export default function AboutUs() {
     window.scroll(0, 0)
   }, [pathname])
 
-  return (
+  return (<>
+    <Helmet>
+      <meta name="description" content="Al Asayel For Luxury Tourist Transport" />
+      <title>About Us</title>
+    </Helmet>
     <section className='pb-32 overflow-hidden'>
       <div className='w-full relative'>
         <div className='w-full bg-slate-700 bg-opacity-50 absolute top-0 left-0 right-0 bottom-0'>
@@ -95,5 +100,5 @@ export default function AboutUs() {
         </div>
       </div>
     </section>
-  )
+  </>)
 }
